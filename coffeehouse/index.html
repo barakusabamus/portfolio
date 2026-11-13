@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeHouse - Премиум кофейня</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">CoffeeHouse</div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Главная</a></li>
+                    <li><a href="#about" class="nav-link">О нас</a></li>
+                    <li><a href="#menu" class="nav-link">Меню</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+                <button class="btn-reserve">Забронировать</button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="hero-subtitle">Добро пожаловать в</span>
+                CoffeeHouse
+            </h1>
+            <p class="hero-description">Искусство кофе в каждой чашке. Откройте для себя мир изысканных вкусов и ароматов.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Наше меню</button>
+                <button class="btn btn-secondary">Узнать больше</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Листайте вниз</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">О нас</span>
+                <h2 class="section-title">Наша история</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="lead-text">С 2015 года мы создаем уникальную кофейную культуру, объединяя традиции и инновации.</p>
+                    <p>Каждое зерно тщательно отбирается из лучших плантаций мира. Наши бариста — настоящие мастера своего дела, прошедшие обучение у ведущих специалистов индустрии.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Сортов кофе</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">15k+</div>
+                            <div class="stat-label">Довольных гостей</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">8</div>
+                            <div class="stat-label">Лет опыта</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="500" fill="#2c1810"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="#8b6f47" font-size="24" font-family="serif">Изображение кофейни</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Меню</span>
+                <h2 class="section-title">Наши напитки</h2>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <div class="menu-card-icon">☕</div>
+                    <h3 class="menu-card-title">Эспрессо</h3>
+                    <p class="menu-card-description">Классический крепкий кофе из 100% арабики</p>
+                    <div class="menu-card-price">250₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🥛</div>
+                    <h3 class="menu-card-title">Капучино</h3>
+                    <p class="menu-card-description">Нежный баланс эспрессо и взбитого молока</p>
+                    <div class="menu-card-price">320₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🍂</div>
+                    <h3 class="menu-card-title">Латте</h3>
+                    <p class="menu-card-description">Мягкий кофе с молочной пенкой и латте-арт</p>
+                    <div class="menu-card-price">340₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🧊</div>
+                    <h3 class="menu-card-title">Колд брю</h3>
+                    <p class="menu-card-description">Холодный кофе с насыщенным вкусом</p>
+                    <div class="menu-card-price">380₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">🍫</div>
+                    <h3 class="menu-card-title">Мокко</h3>
+                    <p class="menu-card-description">Эспрессо с шоколадом и взбитыми сливками</p>
+                    <div class="menu-card-price">360₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+                <div class="menu-card">
+                    <div class="menu-card-icon">✨</div>
+                    <h3 class="menu-card-title">Флэт уайт</h3>
+                    <p class="menu-card-description">Двойной эспрессо с бархатистой микропеной</p>
+                    <div class="menu-card-price">350₽</div>
+                    <button class="btn-card">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="section-header">
+            <span class="section-label">Галерея</span>
+            <h2 class="section-title">Атмосфера</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item gallery-item-large">
+                <svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="600" height="400" fill="#3d2817"/>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#a0826d" font-size="20">Интерьер кофейни</text>
+                </svg>
+            </div>
+            <div class="gallery-item">
+                <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="400" fill="#2c1810"/>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#8b6f47" font-size="16">Кофе</text>
+                </svg>
+            </div>
+            <div class="gallery-item">
+                <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="400" fill="#4a3426"/>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#b8956a" font-size="16">Десерты</text>
+                </svg>
+            </div>
+            <div class="gallery-item">
+                <svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="300" height="300" fill="#3d2817"/>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#a0826d" font-size="16">Бариста</text>
+                </svg>
+            </div>
+            <div class="gallery-item gallery-item-wide">
+                <svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="600" height="300" fill="#2c1810"/>
+                    <text x="50%" y="50%" text-anchor="middle" fill="#8b6f47" font-size="18">Зал</text>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-label">Контакты</span>
+                        <h2 class="section-title">Посетите нас</h2>
+                    </div>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div>
+                                <h4>Адрес</h4>
+                                <p>Москва, ул. Арбат, 25</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <h4>Телефон</h4>
+                                <p>+7 (495) 123-45-67</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div>
+                                <h4>Режим работы</h4>
+                                <p>Ежедневно: 8:00 - 23:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@coffeehouse.ru</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Забронировать столик</h3>
+                    <form>
+                        <input type="text" placeholder="Ваше имя" class="form-input">
+                        <input type="tel" placeholder="Телефон" class="form-input">
+                        <input type="date" class="form-input">
+                        <input type="time" class="form-input">
+                        <select class="form-input">
+                            <option>Количество гостей</option>
+                            <option>1-2 человека</option>
+                            <option>3-4 человека</option>
+                            <option>5+ человек</option>
+                        </select>
+                        <button type="submit" class="btn btn-primary btn-full">Забронировать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-logo">CoffeeHouse</h3>
+                    <p>Премиум кофейня в центре Москвы</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Telegram</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Подписка</h4>
+                    <p>Получайте новости и специальные предложения</p>
+                    <div class="footer-subscribe">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button class="btn-subscribe">→</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 CoffeeHouse. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

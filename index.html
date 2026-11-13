@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Creative Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">
+            <span class="glitch" data-text="PORTFOLIO">PORTFOLIO</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-link">Главная</a></li>
+            <li><a href="#works" class="nav-link">Работы</a></li>
+            <li><a href="#about" class="nav-link">О себе</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particlesCanvas"></canvas>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="line">
+                        <span class="word gradient-text">WebENS</span>
+                    </span>
+                </h1>
+                <p class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </p>
+            </div>
+            <div class="scroll-down">
+                <span>Листайте вниз</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        
+        <!-- Floating shapes -->
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </section>
+
+    <!-- Works Section -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">01.</span>
+                <span class="title-text">Мои работы</span>
+            </h2>
+            
+            <div class="works-grid">
+                <!-- Project 1: Detailing -->
+                <div class="work-card" data-tilt>
+                    <div class="work-card-inner">
+                        <div class="work-image">
+                            <iframe src="detailing/index.html" class="work-preview"></iframe>
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3 class="work-title">Premium Detailing</h3>
+                                    <p class="work-description">Сайт премиум автодетейлинга с элегантным дизайном</p>
+                                    <div class="work-tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">Animations</span>
+                                    </div>
+                                    <div class="work-buttons">
+                                        <a href="detailing/index.html" target="_blank" class="btn-work btn-primary">
+                                            <span>Открыть сайт</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <button class="btn-work btn-view" onclick="openModal('detailing')">
+                                            <span>Просмотр</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M10 3C5 3 1 10 1 10s4 7 9 7 9-7 9-7-4-7-9-7z" stroke="currentColor" stroke-width="2"/>
+                                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-glow"></div>
+                </div>
+
+                <!-- Project 2: CoffeeHouse -->
+                <div class="work-card" data-tilt>
+                    <div class="work-card-inner">
+                        <div class="work-image">
+                            <iframe src="coffeehouse/index.html" class="work-preview"></iframe>
+                            <div class="work-overlay">
+                                <div class="work-info">
+                                    <h3 class="work-title">CoffeeHouse</h3>
+                                    <p class="work-description">Премиум кофейня с уютной атмосферой и стильным интерфейсом</p>
+                                    <div class="work-tags">
+                                        <span class="tag">HTML</span>
+                                        <span class="tag">CSS</span>
+                                        <span class="tag">JavaScript</span>
+                                        <span class="tag">UI/UX</span>
+                                    </div>
+                                    <div class="work-buttons">
+                                        <a href="coffeehouse/index.html" target="_blank" class="btn-work btn-primary">
+                                            <span>Открыть сайт</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M4 10H16M16 10L10 4M16 10L10 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </a>
+                                        <button class="btn-work btn-view" onclick="openModal('coffeehouse')">
+                                            <span>Просмотр</span>
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                                <path d="M10 3C5 3 1 10 1 10s4 7 9 7 9-7 9-7-4-7-9-7z" stroke="currentColor" stroke-width="2"/>
+                                                <circle cx="10" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-glow"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated background elements -->
+        <div class="bg-lines">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-number">02.</span>
+                <span class="title-text">О себе</span>
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-paragraph">
+                        Привет! Я веб-разработчик, который любит создавать красивые и функциональные интерфейсы.
+                    </p>
+                    <p class="about-paragraph">
+                        Специализируюсь на frontend разработке с фокусом на анимации, интерактивность и пользовательский опыт.
+                        Каждый проект — это возможность создать что-то уникальное и запоминающееся.
+                    </p>
+                    
+                    <div class="skills">
+                        <h3 class="skills-title">Навыки:</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon">💻</div>
+                                <span>HTML/CSS/JS</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">🎨</div>
+                                <span>UI/UX Design</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">⚡</div>
+                                <span>Animations</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">📱</div>
+                                <span>Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="visual-card">
+                        <div class="visual-content">
+                            <div class="code-lines">
+                                <span class="code-line"><span class="code-keyword">const</span> developer = {</span>
+                                <span class="code-line">  <span class="code-property">name</span>: <span class="code-string">'Creative Dev'</span>,</span>
+                                <span class="code-line">  <span class="code-property">location</span>: <span class="code-string">'Russia'</span>,</span>
+                                <span class="code-line">  <span class="code-property">skills</span>: [<span class="code-string">'JS'</span>, <span class="code-string">'CSS'</span>],</span>
+                                <span class="code-line">  <span class="code-property">passion</span>: <span class="code-string">'animations'</span></span>
+                                <span class="code-line">};</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-background" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <iframe id="modalIframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Создано с <span class="heart">♥</span> в 2026</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
